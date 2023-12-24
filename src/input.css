@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+
+
+
+@tailwind utilities;
+
+
+@layer components {
+    .btn {
+        @apply px-8 py-3 text-white rounded-full bg-gradient-to-r from-button-green to-button-cyan;
+    }
+
+    .spacing {
+        @apply [&>*:not(:first-child)]:mt-8;
+    }
+
+    .mid-section-properties {
+        @apply flex flex-col justify-items-center text-center gap-4;
+    }
+
+    .icon-box {
+        @apply flex justify-center;
+    }
+
+    .first-header {
+        @apply font-medium text-first-header text-primary-blue;
+    }
+
+    .secondary-header {
+        @apply font-medium text-second-header text-primary-blue;
+    }
+
+    .third-header {
+        @apply font-medium text-secondary-header text-primary-blue;
+    }
+
+    p {
+        @apply text-shadow-blue;
+    }
+
+    .card-border {
+        border-radius: 0.5rem;
+        overflow: hidden;
+    }
+
+    .article-card {
+        @apply p-8 bg-mid-section-bg [&>*:not(:first-child)]:mt-4;
+    }
+}
