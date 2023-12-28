@@ -6,6 +6,7 @@ module.exports = {
     screens: {
       "mobile": "375px",
       "wallpaper-breakpoint": "750px",
+      "soft-cap": "1150px",
       "desktop": "1440px",
     },
     colors: {
@@ -19,10 +20,11 @@ module.exports = {
     },
     fontFamily: { "sans": ['Public Sans', 'sans-serif'] },
     fontSize: {
-      "first-header": "2rem",
-      "second-header": "1.75rem",
-      "secondary-header": "1.5rem",
-      "normal-text": "1rem",
+
+      "first-header": "var(--first-header-size)",
+      "second-header": "var(--second-header-size)",
+      "secondary-header": "var(--secondary-header-size)",
+      "normal-text": "var(--normal-text-size)",
       "quotes": "0.8125rem",
     },
     extend: {},
