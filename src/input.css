@@ -46,7 +46,7 @@
         border-radius: 0.5rem;
         overflow: clip;
         border-collapse: separate;
-        @apply wallpaper-breakpoint:w-2/5 soft-cap:w-1/5;
+        @apply wallpaper-breakpoint:w-[48%] soft-cap:w-[23%];
     }
 
     .article-card {
